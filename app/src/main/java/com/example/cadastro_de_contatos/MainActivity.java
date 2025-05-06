@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     EditText edNome, edCelular, edEmail;
-    Button btCadastrar, btConsultar, btExcluir;
+    Button btSalvar, btConsultar, btApagar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

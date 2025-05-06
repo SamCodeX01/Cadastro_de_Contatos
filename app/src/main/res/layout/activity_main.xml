@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btCadastrar"
+        android:id="@+id/btSalvar"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -38,10 +38,10 @@
         android:layout_marginTop="43dp"
         android:text="Consultar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btCadastrar" />
+        app:layout_constraintTop_toBottomOf="@+id/btSalvar" />
 
     <Button
-        android:id="@+id/bdExcluir"
+        android:id="@+id/btApagar"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
