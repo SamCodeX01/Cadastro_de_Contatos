@@ -34,7 +34,7 @@ public class ContatoDAO {
     }
 
     public void salvarContato(Contato c){
-        SQLiteDatabase db = this.getWritableDatabase();
+        SQLiteDatabase db = this.getWritableDatabase();//getWritableDatabase() em vermelho
         ContentValues valores = new ContentValues();
         valores.put(COLUNA_NOME, c.getNome());
         valores.put(COLUNA_CELULAR, c.getCelular());
@@ -45,7 +45,7 @@ public class ContatoDAO {
     }
 
     public void atualizarContato(Contato c){
-        SQLiteDatabase db = this.getWritableDatabase();
+        SQLiteDatabase db = this.getWritableDatabase();//getWritableDatabase() em vermelho
 
         ContentValues valores = new ContentValues();
         valores.put(COLUNA_NOME, c.getNome());
@@ -59,7 +59,7 @@ public class ContatoDAO {
     }
 
     public void excluirContato(int id){
-        SQLiteDatabase db = this.getWritableDatabase();
+        SQLiteDatabase db = this.getWritableDatabase(); //getWritableDatabase() em vermelho
         String parametro[] = {String.valueOf(id)};
         db.delete(TABELA_CONTATO, "id = ? ", parametro);
         db.close();
@@ -70,7 +70,7 @@ public class ContatoDAO {
         c = null;
         String parametro[] = {pnome};
         String campos[] = {"id, nome, celular, email"};
-        SQLiteDatabase db = this.getReadableDatabase();
+        SQLiteDatabase db = this.getReadableDatabase(); //getReadableDatabase() em vermelho
         Cursor cr = db.query(TABELA_CONTATO,
                 campos,
                 "nome = ?",
